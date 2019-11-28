@@ -1,0 +1,126 @@
+@import "https://fonts.googleapis.com/css?family=Courgette&display=swap"
+
+body
+    background-color: rgb(55, 165, 138)
+    cursor: pointer
+
+body, figure, html
+    box-sizing: border-box
+
+*, :after, :before
+    box-sizing: inherit
+
+figure, .content, p
+    transition: 1s all ease-in-out
+
+.phone
+    &:after, &:before
+        content: ' '
+        position: absolute
+
+div
+    margin: auto
+
+.phone:after
+    margin: auto
+    right: 0
+    left: 0
+
+.side-buttons div, .phone:after
+    top: 0
+    bottom: 0
+
+figure  
+    position: relative
+    margin: 25px auto
+    width: 281px
+    height: 591px
+
+    .side-buttons
+        position: absolute
+        height: 125px
+        top: 84px
+        
+        &:after, &:before
+            content: ' '
+            
+        div, &:after, &:before
+            position: absolute
+            background: rgb(29, 29, 29)
+            width: 5px
+            border-radius: 2px
+
+        &:before
+            height: 25px
+
+        div, &:after
+            height: 15px
+            bottom: 0
+
+.phone
+    width: 278px
+    height: 588px
+
+    &:before
+        width: 100%
+        height: 100%
+        border: 20px solid rgb(29, 29, 29)
+        border-radius: 40px
+
+    &:after
+        width: 270px
+        height: 580px
+        border: 3px solid
+        border-top-color: rgb(37, 37, 37)
+        border-left-color: rgb(37, 37, 37)
+        border-right-color: rgb(33, 33, 33)
+        border-bottom-color: rgb(33, 33, 33)
+        border-radius: 35px
+
+.content
+    position: absolute
+    padding: 10px
+    margin: auto
+    bottom: 20px
+    left: 20px
+    width: 90%
+    height: 94%
+    border-radius: 3px
+    z-index: -3
+    overflow: hidden
+    background-image:  url("../../img/image.jpg")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    p
+        padding: 9px
+        width: 85%
+        font-family: 'Courgette', cursive
+
+        img
+            width: 100%
+            margin-top: 15px
+            border-radius: 5px
+        &.left
+            background-color: rgb(12, 17, 20)
+            color: white
+            border-radius: 9px 9px 9px 0
+        &.right
+            background-color: rgb(235, 235, 235)
+            color: black
+            border-radius: 9px 9px 0px 9px
+            margin:
+                left: 20px
+
+
+// jquery toggle animation class
+
+.rotate
+    transform: rotate(-90deg)
+.landscape
+	bottom: 28%
+	left: -49%
+	width: 198%
+	height: 45%
+	border-radius: 10px
+	transform: rotate(90deg)

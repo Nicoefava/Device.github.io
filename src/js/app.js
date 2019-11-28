@@ -1,0 +1,1 @@
+$(function(){$(".content > p").hide(),$("html").on("click",function(){$(".content > p").each(function(t){setTimeout(function(t){t.fadeIn()},1500*t,$(this))}),setTimeout(function(){$("figure").toggleClass("rotate"),$(".content").toggleClass("landscape")},6e3)})});
